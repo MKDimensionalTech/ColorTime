@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="foguete.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>ColorTime</title>
+</head>
+<body>
+    <div id="img1"></div>
+    <div id="text">
+        <div class="container">
+            <h1>Prepare-se para essa incrível aventura!!</h1>
+            <div id="contagem">
+                <h2 id="D">Days</h2>
+                <h2 id="H">Hours</h2>
+                <h2 id="M">Minutes</h2>
+                <h2 id="S">Seconds</h2>
+            </div>
+            <div id="numeros">
+                <span class="quadrado" id="days"></span>
+                <span class="ponto">:</span>
+                <span class="quadrado" id="hours"></span>
+                <span class="ponto">:</span>
+                <span class="quadrado" id="minutes"></span>
+                <span class="ponto">:</span>
+                <span class="quadrado" id="seconds"></span>
+            </div>
+            <p>Para saber mais, increva-se</p>
+            <button>Increva-se</button>
+        </div>
+        <div id="img"></div>
+    </div>
+    <div id="img2">
+        <img src="foguete.png" alt="">
+    </div>
+    <script>
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        let count_down = new Date('03/09/2025 00:00:00').getTime();
+        let x = setInterval(() => countDown(), second);
+
+        function countDown() {
+        let now = new Date(Date.now()).getTime();
+        let diff = count_down - now;
+
+        document.getElementById('days').innerText = Math.floor(diff / day);
+        document.getElementById('hours').innerText = Math.floor(diff % day / hour);
+        document.getElementById('minutes').innerText = Math.floor(diff % hour / minute);
+        document.getElementById('seconds').innerText = Math.floor(diff % minute / second);
+        }
+    </script>
+
+</body>
+</html>
