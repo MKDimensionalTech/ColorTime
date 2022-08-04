@@ -271,11 +271,11 @@ button{
     }
     div#contagem>h2#D{
         margin-bottom: 20px;
-        margin-left: 30px;
+        margin-left: 12px;
         font-family: 'confort','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     div#contagem>h2#H{
-        margin-left: 40px;
+        margin-left: 20px;
         font-family: 'confort','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     div#contagem>h2#M{
@@ -289,7 +289,7 @@ button{
     div#numeros>span.quadrado{
         display: inline-flex;
         background-color:#df7849;
-        padding: 20px;
+        padding: 13px;
         box-shadow: 8px 8px 8px #321203;
         border-radius: 30px 30px;
     }
