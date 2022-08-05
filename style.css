@@ -246,7 +246,7 @@ button{
 }
 @media  (max-width: 779px) and (min-width:300px) {
     div#img2>img{
-        width: 150px;
+        width: 130px;
         height: 150px;
         margin-top: 70px;
     }
@@ -270,26 +270,30 @@ button{
         margin-left: 10px;
     }
     div#contagem>h2#D{
+        font-size: 0.8em;
         margin-bottom: 20px;
         margin-left: 12px;
         font-family: 'confort','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     div#contagem>h2#H{
-        margin-left: 20px;
+        font-size: 0.8em;
+        margin-left: 15px;
         font-family: 'confort','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     div#contagem>h2#M{
-        margin-left: 20px;
+        font-size: 0.8em;
+        margin-left: 10px;
         font-family: 'confort','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     div#contagem>h2#S{
-        margin-left: 10px;
+        font-size: 0.8em;
+        margin-left: 8px;
         font-family: 'confort','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     div#numeros>span.quadrado{
         display: inline-flex;
         background-color:#df7849;
-        padding: 13px;
+        padding: 8px;
         box-shadow: 8px 8px 8px #321203;
         border-radius: 30px 30px;
     }
